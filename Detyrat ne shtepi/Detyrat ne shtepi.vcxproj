@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ADCD4686-02D0-4A79-806E-859D9FA7B290}</ProjectGuid>
+    <RootNamespace>Detyratneshtepi</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="asembler.cpp" />
+    <ClCompile Include="banesa.cpp" />
+    <ClCompile Include="detyraushtrime.cpp" />
+    <ClCompile Include="detyrprovimi.cpp" />
+    <ClCompile Include="ditejaves.cpp" />
+    <ClCompile Include="dyfunksionetr.cpp" />
+    <ClCompile Include="faktorierli me rekurzion.cpp" />
+    <ClCompile Include="fibonaccirekursion.cpp" />
+    <ClCompile Include="fibonaci.cpp" />
+    <ClCompile Include="figurat.cpp" />
+    <ClCompile Include="fjalkalimi.cpp" />
+    <ClCompile Include="funksioni me if.cpp" />
+    <ClCompile Include="futbolli.cpp" />
+    <ClCompile Include="kadritemperatura.cpp" />
+    <ClCompile Include="Lfunsikon.cpp" />
+    <ClCompile Include="linja.cpp" />
+    <ClCompile Include="llaptopi.cpp" />
+    <ClCompile Include="loja me enum.cpp" />
+    <ClCompile Include="matriaca101.cpp" />
+    <ClCompile Include="matricafunksion.cpp" />
+    <ClCompile Include="matricat.cpp" />
+    <ClCompile Include="maxmin.cpp" />
+    <ClCompile Include="mbingarkimi.cpp" />
+    <ClCompile Include="mbingarkimi123.cpp" />
+    <ClCompile Include="min.cpp" />
+    <ClCompile Include="muzika.cpp" />
+    <ClCompile Include="notaedoni.cpp" />
+    <ClCompile Include="notat.cpp" />
+    <ClCompile Include="numrimet.cpp" />
+    <ClCompile Include="numrimi gjatesia.cpp" />
+    <ClCompile Include="overload.cpp" />
+    <ClCompile Include="Pemet.cpp" />
+    <ClCompile Include="vetura.cpp" />
+    <ClCompile Include="Policet kufitar.cpp" />
+    <ClCompile Include="prodhimi rekurzion.cpp" />
+    <ClCompile Include="qytetistruktura.cpp" />
+    <ClCompile Include="rrethi.cpp" />
+    <ClCompile Include="rrogaedoni.cpp" />
+    <ClCompile Include="shmamefunksione.cpp" />
+    <ClCompile Include="shtypja e vektorit.cpp" />
+    <ClCompile Include="shuma e vargut me rekurzion.cpp" />
+    <ClCompile Include="shuma me funksione.cpp" />
+    <ClCompile Include="shuma me rekurzion.cpp" />
+    <ClCompile Include="shumaevargut.cpp" />
+    <ClCompile Include="shuma_prodhimi_faktorieli.cpp" />
+    <ClCompile Include="siperfaqet.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Prodhimi.cpp" />
+    <ClCompile Include="Source1.cpp" />
+    <ClCompile Include="Source2.cpp" />
+    <ClCompile Include="Source3.cpp" />
+    <ClCompile Include="aritmetika.cpp" />
+    <ClCompile Include="Shkronaj X.cpp" />
+    <ClCompile Include="struktura drejtkendeshi.cpp" />
+    <ClCompile Include="studenti12.cpp" />
+    <ClCompile Include="teksti.cpp" />
+    <ClCompile Include="Tfunksion.cpp" />
+    <ClCompile Include="trekendshi.cpp" />
+    <ClCompile Include="TreNumra.cpp" />
+    <ClCompile Include="vektorireal.cpp" />
+    <ClCompile Include="vektorishembull.cpp" />
+    <ClCompile Include="vektor_funksion.cpp" />
+    <ClCompile Include="vektroi4.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
